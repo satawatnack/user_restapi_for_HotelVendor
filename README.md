@@ -1,6 +1,6 @@
 # user_restapi_for_HotelVendor
 
-@GetMapping("/user")
+	@GetMapping("/user")
 	public List<User> index(){
 		return userRepository.findAll();
 	}
@@ -20,4 +20,4 @@
 		String email = body.get("email");
 		return userRepository.save(new User(firstname, middlename, lastname, tel, email));
 	}
-}
+
